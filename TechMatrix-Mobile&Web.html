@@ -1,0 +1,566 @@
+<!DOCTYPE html
+    PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta name="viewport" content="width=device-width">
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <title>Mobile & Web Service</title>
+    <style type="text/css">
+        html,
+        body {
+            margin: 0 auto !important;
+            padding: 0 !important;
+            height: 100% !important;
+            width: 100% !important;
+        }
+
+        /* What it does: Stops email clients resizing small text. */
+        * {
+            -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+            -ms-text-size-adjust: 100%;
+            -webkit-text-size-adjust: 100%;
+        }
+
+        /* What it does: Centers email on Android 4.4 */
+        div[style*="margin: 16px 0"] {
+            margin: 0 !important;
+        }
+
+        /* What it does: Stops Outlook from adding extra spacing to tables. */
+        table,
+        td {
+            mso-table-lspace: 0pt !important;
+            mso-table-rspace: 0pt !important;
+        }
+
+        /* What it does: Uses a better rendering method when resizing images in IE. */
+        img {
+            -ms-interpolation-mode: bicubic;
+        }
+
+        /* What it does: Prevents Windows 10 Mail from underlining links despite inline CSS. Styles for underlined links should be inline. */
+        a {
+            text-decoration: none !important;
+            outline: none !important
+        }
+
+        /* What it does: A work-around for email clients meddling in triggered links. */
+        *[x-apple-data-detectors],
+        /* iOS */
+        .unstyle-auto-detected-links *,
+        .aBn {
+            border-bottom: 0 !important;
+            cursor: default !important;
+            color: inherit !important;
+            text-decoration: none !important;
+            font-size: inherit !important;
+            font-family: inherit !important;
+            font-weight: inherit !important;
+            line-height: inherit !important;
+        }
+
+        /* What it does: Prevents Gmail from displaying a download button on large, non-linked images. */
+        .a6S {
+            display: none !important;
+            opacity: 0.01 !important;
+        }
+
+        /* What it does: Prevents Gmail from changing the text color in conversation threads. */
+        .im {
+            color: inherit !important;
+        }
+
+        /* If the above doesn't work, add a .g-img class to any image in question. */
+        img.g-img+div {
+            display: none !important;
+        }
+
+        /* What it does: Removes right gutter in Gmail iOS app: https://github.com/TedGoas/Cerberus/issues/89  */
+        /* Create one of these media queries for each additional viewport size you'd like to fix */
+
+        @media only screen and (max-width: 550px) {
+            .card-title {
+                font-size: 14px !important;
+                line-height: 18px !important
+            }
+
+            .card-icon {
+                width: 70px !important;
+            }
+
+            .section-title {
+                font-size: 18px !important;
+                line-height: 22px !important;
+            }
+
+            .opening-copy>p,
+            .cart-box>p {
+                font-size: 13px !important;
+                line-height: 18px !important;
+            }
+
+            .ctabtn {
+                width: 150px !important;
+            }
+
+            .ctabtn td {
+                font-size: 14px !important;
+                padding: 7px 5px !important;
+            }
+        }
+    </style>
+</head>
+
+<body bgcolor="#ffffff"
+    style="background-color:#ffffff;margin: 0px;font-family: arial, sans-serif !important;padding:0px;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;">
+    <center>
+        <!--[if (gte mso 9)|(IE)]>
+<table width="560">
+<tr>
+<td>
+<![endif]-->
+        <table align="center" cellpadding="0" cellspacing="0" borderspcing="0" bgcolor="#ffffff"
+            style="background: #ffffff;border: 1px solid #f3f3f3;max-width:600px;width:100%;">
+            <tr>
+                <td>
+                    <!--Header Start-->
+                    <table width="100%" align="center" cellpadding="0" bgcolor="#ffffff" class="table-header"
+                        cellspacing="0" style="background-color:#fff;margin:0 auto;">
+                        <tbody>
+                            <tr style="background-color:#f3f3f3;">
+                                <td align="center" style="padding:20px 0;">
+                                    <a href="https://techmatrixconsulting.com/" style="display: inline-block;"><img
+                                            alt="TechMatrix"
+                                            src="https://techmatrixconsulting.com/images/techmatrix-logo.png"
+                                            style="max-width:200px;" class="logo"></a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td align="center" style="">
+                                    <a href="https://techmatrixconsulting.com/" style="display: inline-block;"><img
+                                            alt="banner" src="https://i.ibb.co/sPx00jp/main-app-banner.jpg"
+                                            style="max-width: 100%; vertical-align:top;"></a>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <!--Header End-->
+                    <!--Main content Start-->
+                    <table bgcolor="#ffffff" border="0" cellpadding="0" cellspacing="0"
+                        style="width: 100%; background:#ffffff;" align="center">
+                        <tbody>
+                            <tr>
+                                <td style="padding: 30px 15px 25px">
+                                    <div class="opening-copy" style="max-width: 550px;margin: 0px auto">
+                                        <p
+                                            style="font-family:Helvetica, Arial, sans-serif;color:#4e4e4e;font-size:14px;line-height:20px;font-weight:400;margin:0 0 10px;font-weight: 600">
+                                            Hi XYZ,</p>
+                                        <p
+                                            style="font-family:Helvetica, Arial, sans-serif;color:#4e4e4e;font-size:14px;line-height:20px;font-weight:400;margin:0 0 10px;">
+                                            At Techmatrix Consulting Software Services, we offer models in Application
+                                            Development & Integration that are efficient enough to meet the demands of
+                                            modern Business Organizations. Our high-end force.com solutions are designed
+                                            to give scalable data models and data flow.</p>
+                                        <p
+                                            style="font-family:Helvetica, Arial, sans-serif;color:#4e4e4e;font-size:14px;line-height:20px;font-weight:400;margin:0 0 10px;">
+                                            We have a very dedicated team of Certified Salesforce Consultants who in
+                                            association with the application architects make the whole process easy &
+                                            productive.</p>
+                                    </div>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td>
+                                    <table border="0" cellpadding="0" cellspacing="0" align="center" width="100%">
+                                        <tbody>
+                                            <!--Section-1 Start-->
+                                            <tr>
+                                                <td style="padding:0 0 40px; background:#f3f3f3;">
+                                                    <table border="0" cellpadding="0" cellspacing="0"
+                                                        style="width:100%;">
+
+                                                        <tr>
+                                                            <td class="section-title" colspan="2"
+                                                                style="color:#0e3860; font-size:20px; line-height:25px; font-weight:700; text-align:center; padding:30px 0 0;">
+                                                                What is Salesforce
+                                                                App Development & Integration </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td colspan="2"
+                                                                style="text-align:center; padding:0 0 20px;">
+                                                                <table style="width:160px; margin:0 auto;">
+                                                                    <tr>
+                                                                        <td style="background:#0e3860;   height:3px;">
+                                                                        </td>
+                                                                    </tr>
+                                                                </table>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td
+                                                                style="text-align: center;padding: 0px 10px;width: 49%;vertical-align: top;">
+
+
+                                                                <p
+                                                                    style="font-family:Helvetica, Arial, sans-serif;color:#656565;font-size:14px;line-height:18px;font-weight:400;margin:0px auto 10px;max-width:100%; padding:0 15px;">
+                                                                    Salesforce is a highly competitive Customer
+                                                                    Relationship Management Platform that acts as a
+                                                                    blueprint for App Development on Salesforce offering
+                                                                    different types of Applications focused on managing
+                                                                    functions like marketing automation, customer
+                                                                    service, analytics, and more. It helps the
+                                                                    application to meet customer needs & business
+                                                                    requirements for a brand by interacting between
+                                                                    various features. </p>
+                                                            </td>
+
+                                                        </tr>
+
+                                                        <tr>
+                                                            <td align="center" colspan="2" style="padding:35px 0 0;">
+                                                                <table align="center"
+                                                                    style="width:300px;text-align:center" border="0"
+                                                                    cellpadding="0" cellspacing="0">
+                                                                    <tbody>
+                                                                        <tr>
+                                                                            <td class="cart-box"
+                                                                                style="text-align:center">
+                                                                                <a href="#">
+                                                                                    <img src="https://www.techmatrixconsulting.com/images/services/app.png"
+                                                                                        style="max-width:300px"
+                                                                                        alt="shortest lock in"
+                                                                                        class="card-icon">
+                                                                                </a>
+
+                                                                            </td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td style="padding:23px 0 0;">
+                                                                                <div align="center" class="cta-block">
+                                                                                    <!--[if mso]>
+<v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" href="#" style="height:32px;v-text-anchor:middle;width:220px;" arcsize="1%" stroke="#454545" fillcolor="#454545">
+<center style="color:#ffffff;font-family:arial, sans-serif;font-size:15px;line-height:20px;">INVEST NOW</center>
+</v:roundrect>
+<![endif]-->
+                                                                                    <!--[if !mso]><!-->
+                                                                                    <table class="ctabtn"
+                                                                                        cellspacing="0" cellpadding="0"
+                                                                                        width="100%"
+                                                                                        style="margin:0 auto; width:220px;">
+                                                                                        <tbody>
+                                                                                            <tr>
+                                                                                                <td
+                                                                                                    style="display:block;text-decoration:none;text-align:center;line-height:25px;font-size:16px;margin:0px auto;;clear:both;-webkit-text-size-adjust:none;mso-hide:all;vertical-align:middle;background:#4fb4e1;padding:10px 5px; border-radius:50px;">
+                                                                                                    <a href="https://www.techmatrixconsulting.com/services/salesforce-app-development.php"
+                                                                                                        style="font-weight:bold;text-decoration:none;display:block;color: #ffffff; font-family:'helvetica neue', helvetica, arial, sans-serif !important;">Explore
+                                                                                                        Now</a>
+                                                                                                </td>
+                                                                                            </tr>
+                                                                                        </tbody>
+                                                                                    </table>
+                                                                                    <!--<![endif]-->
+                                                                                </div>
+                                                                            </td>
+                                                                        </tr>
+                                                                    </tbody>
+                                                                </table>
+                                                            </td>
+                                                        </tr>
+                                                    </table>
+                                                </td>
+                                            </tr>
+                                            <!--Section-1 End-->
+
+
+                                            <!--Section-2 Start-->
+                                            <tr>
+                                                <td style="padding:0 0 10px;">
+                                                    <table border="0" cellpadding="0" cellspacing="0"
+                                                        style="width:100%;">
+
+                                                        <tr>
+                                                            <td class="section-title" colspan="2"
+                                                                style="color:#0e3860; font-size:20px; line-height:25px; font-weight:700; text-align:center; padding:50px 0 0;">
+                                                                The Core Architecture & Components of Salesforce</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td colspan="2"
+                                                                style="text-align:center; padding:0 0 25px;">
+                                                                <table style="width:160px; margin:0 auto;">
+                                                                    <tr>
+                                                                        <td style="background:#0e3860;   height:3px;">
+                                                                        </td>
+                                                                    </tr>
+                                                                </table>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="cart-box"
+                                                                style="text-align: center;padding: 0px 10px;width: 49%;vertical-align: top;">
+                                                                <a href="#">
+                                                                    <img src="https://i.ibb.co/3MNP1GS/ic3h.png"
+                                                                        style="width:100px; height:100px; background: #4fb4e1; padding: 20px; border-radius: 100%;"
+                                                                        class="card-icon" alt="tax benefits">
+                                                                </a>
+                                                                <h3 class="card-title"
+                                                                    style="font-family:Helvetica, Arial, sans-serif;color:#4d4d4d;font-size:16px;line-height:20px;font-weight:700;margin:15px auto 5px;max-width: 248px">
+                                                                    Cloud Based Platform</h3>
+                                                                <p
+                                                                    style="font-family:Helvetica, Arial, sans-serif;color:#656565;font-size:14px;line-height:18px;font-weight:400;margin:0px auto 10px;max-width: 225px;">
+                                                                    Salesforce is a cloud-based CRM platform that offers
+                                                                    a multi-tenant architecture...</p>
+                                                                <a href="https://www.techmatrixconsulting.com/services/salesforce-app-development.php"
+                                                                    style="background: #4fb4e1; max-width: 130px;
+padding: 8px;
+border-radius: 20px;
+margin: 0 auto; text-decoration:none;display:block; color: #ffffff; font-family:'helvetica neue', helvetica, arial, sans-serif !important;">Read
+                                                                    More</a>
+                                                            </td>
+                                                            <td class="cart-box"
+                                                                style="text-align: center;padding: 0px 10px;width: 49%;vertical-align: top;">
+                                                                <a href="#">
+                                                                    <img src="https://techmatrixconsulting.com/images/services/6h.png"
+                                                                        style="width:100px;background: #4fb4e1; padding: 20px; border-radius: 100%;"
+                                                                        class="card-icon" alt="Assured Pention">
+                                                                </a>
+                                                                <h3 class="card-title"
+                                                                    style="font-family:Helvetica, Arial, sans-serif;color:#4d4d4d;font-size:16px;line-height:20px;font-weight:700;margin:14px auto 5px;max-width: 240px">
+                                                                    Easy App Building</h3>
+                                                                <p
+                                                                    style="font-family:Helvetica, Arial, sans-serif;color:#656565;font-size:14px;line-height:18px;font-weight:400;margin:0px auto 10px;max-width: 225px;">
+                                                                    It uses both metadata as well as the application
+                                                                    data in a shared database... </p>
+                                                                <a href="https://www.techmatrixconsulting.com/services/salesforce-app-development.php"
+                                                                    style="background: #4fb4e1; max-width: 130px;
+padding: 8px;
+border-radius: 20px;
+margin: 0 auto; text-decoration:none;display:block; color: #ffffff; font-family:'helvetica neue', helvetica, arial, sans-serif !important;">Read
+                                                                    More</a>
+                                                            </td>
+                                                        </tr>
+
+                                                        <tr>
+                                                            <td align="center" colspan="2" style="padding:35px 0 0;">
+                                                                <table align="center"
+                                                                    style="width:300px;text-align:center" border="0"
+                                                                    cellpadding="0" cellspacing="0">
+                                                                    <tbody>
+                                                                        <tr>
+                                                                            <td class="cart-box"
+                                                                                style="text-align:center">
+                                                                                <a href="#0.1_">
+                                                                                    <img src="https://i.ibb.co/N9Lqg8K/ic1h.png"
+                                                                                        style="width:100px;background: #4fb4e1; padding: 20px; border-radius: 100%;"
+                                                                                        alt="shortest lock in"
+                                                                                        class="card-icon">
+                                                                                </a>
+                                                                                <h3 class="card-title"
+                                                                                    style="font-family:Helvetica,Arial,sans-serif;color:#4d4d4d;font-size:16px;line-height:20px;font-weight:700;margin:15px 0 5px">
+                                                                                    Use of API</h3>
+                                                                                <p
+                                                                                    style="font-family:Helvetica,Arial,sans-serif;color:#656565;font-size:14px;line-height:18px;font-weight:400;margin:0px auto 10px;max-width:320px">
+                                                                                    Also, Salesforce uses API i.e.
+                                                                                    Application Programming Interface,
+                                                                                    which defines interactions between
+                                                                                    multiple software/application
+                                                                                    intermediaries...</p>
+                                                                                <a href="https://www.techmatrixconsulting.com/services/salesforce-app-development.php"
+                                                                                    style="background: #4fb4e1; max-width: 130px;
+padding: 8px;
+border-radius: 20px;
+margin: 0 auto; text-decoration:none;display:block; color: #ffffff; font-family:'helvetica neue', helvetica, arial, sans-serif !important;">Read
+                                                                                    More</a>
+                                                                            </td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td style="padding:23px 0 0;">
+                                                                                <div align="center" class="cta-block">
+                                                                                    <!--[if mso]>
+<v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" href="#" style="height:32px;v-text-anchor:middle;width:220px;" arcsize="1%" stroke="#454545" fillcolor="#454545">
+<center style="color:#ffffff;font-family:arial, sans-serif;font-size:15px;line-height:20px;">INVEST NOW</center>
+</v:roundrect>
+<![endif]-->
+                                                                                    <!--[if !mso]><!-->
+                                                                                    <table class="ctabtn"
+                                                                                        cellspacing="0" cellpadding="0"
+                                                                                        width="100%"
+                                                                                        style="margin:0 auto; width:220px;">
+                                                                                        <tbody>
+                                                                                         
+                                                                                        </tbody>
+                                                                                    </table>
+                                                                                    <!--<![endif]-->
+                                                                                </div>
+                                                                            </td>
+                                                                        </tr>
+                                                                    </tbody>
+                                                                </table>
+                                                            </td>
+                                                        </tr>
+                                                      
+                                                    </table>
+                                                </td>
+                                            </tr>
+                                            <!--Section-2 End-->
+
+                                        </tbody>
+                                    </table>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <table align="center" border="0" cellspacing="0" bgcolor="#616161" class="table-cta"
+                                        style="background: #0e3860; width:100%;">
+                                        <tbody>
+                                            <tr>
+                                                <td style="padding:20px 15px 25px;">
+                                                    <h2
+                                                        style="font-family: helvetica, arial, sans-serif;font-size:16px;font-weight:600;line-height:20px;vertical-align:top;text-align:center;max-width:470px;margin:5px auto 10px;color:#ffffff; font-size:25px;">
+                                                        Need Our Assistance?</h2>
+                                                        <p style="color:#fff; font-family: helvetica, arial, sans-serif;font-size:16px;font-weight:400; text-align: center;">TechMatrix is founded by a team of dynamic and high-spirited entrepreneurs who are pioneers in the Cloud Computing space. It has successfully contributed to running and supporting different business organizations for several years</p>
+                                                        <h4 style="margin-top:0; color:#fff; font-family: helvetica, arial, sans-serif;font-size:20px;font-weight:400; text-align: center;">We are just an email or Call away!</h4>
+                                                    <div align="center">
+                                                        <!--[if mso]>
+<v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" href="" style="height:35px;v-text-anchor:middle;width:230px;" arcsize="1%" stroke="f" fillcolor="#ffffff">
+<center style="color:#616161;font-family:arial, sans-serif;font-size:14px; text-transform:uppercase;">Take me to the app</center>
+</v:roundrect>
+<![endif]-->
+                                                        <!--[if !mso]><!-->
+                                                        <table align="center" cellspacing="0" cellpadding="0"
+                                                            width="100%" style="margin:0px auto;width:240px;">
+                                                            <tbody>
+                                                                <tr>
+                                                                    <td
+                                                                        style="border-radius:20px;width:150px;display:block;text-decoration:none;text-align:center;line-height:20px;font-size:15px;margin:0px auto;float:none;clear:both;-webkit-text-size-adjust:none;mso-hide:all;vertical-align:middle;background:#4fb4e1;padding:7px 5px 7px;">
+                                                                        <a href="https://www.techmatrixconsulting.com/contact.php"
+                                                                            style="text-transform: uppercase;font-weight:bold;text-decoration:none;display:block;color: #fff; font-family:'helvetica neue', helvetica, arial, sans-serif !important;">Contact us
+                                                                        </a>
+                                                                    </td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                        <!--<![endif]-->
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <!--Main content End-->
+                    <!--Section Footer Start-->
+                    <table border="0" cellpadding="0" cellspacing="0" bgcolor="#f7f7f7"
+                        style="width:100%;background:#f7f7f7;max-width:600px !important;margin:0 auto !important;">
+                        <tbody>
+                            <tr>
+                                <td align="center"
+                                    style="font-size:13px;line-height:16px;padding:10px 10px 0px;text-transform:uppercase;color:#292929;">
+                                    <p style="max-width:500px;margin:5px 0px;font-family: arial, sans-serif;">CONNECT
+                                        WITH US:</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="padding-bottom:10px;">
+                                    <table align="center"
+                                        style="margin:0px auto;width:186px;font-size:10px;line-height:18px;padding-bottom:0px;text-align:center;">
+                                        <tbody>
+                                            <tr>
+                                                <td>
+                                                    <a target="_blank" href="https://www.facebook.com/TechMatrix.sg"
+                                                        style="color:#000000;text-decoration:none;width:100%;display:inline-block;border-radius:5px;">
+                                                        <img src="https://gallery.mailchimp.com/842000e165a3340698ad52ad6/images/aacd9289-2b84-4dc9-bf9b-de31d70d72a9.png"
+                                                            alt="Facebook" style="max-width: 30px;">
+                                                    </a>
+                                                </td>
+                                                <td>
+                                                    <a target="_blank" href="https://twitter.com/TechMatrix_SG"
+                                                        style="color:#000000;text-decoration:none;width:100%;display:inline-block;">
+                                                        <img src="https://gallery.mailchimp.com/842000e165a3340698ad52ad6/images/862a555a-877c-4f12-9f76-fa520b18d250.png"
+                                                            alt="Twitter" style="max-width: 30px;">
+                                                    </a>
+                                                </td>
+                                                
+                                                <td>
+                                                    <a target="_blank"
+                                                        href="https://www.linkedin.com/company/TechMatrix-pte-ltd"
+                                                        style="color:#000000;text-decoration:none;width:100%;display:inline-block;">
+                                                        <img src="https://gallery.mailchimp.com/842000e165a3340698ad52ad6/images/df0f450d-f46a-4fd4-8150-4e1a888e35f6.png"
+                                                            alt="Linkedin" style="max-width: 30px;">
+                                                    </a>
+                                                </td>
+                                                <td>
+                                                    <a target="_blank"
+                                                        href="https://instagram.com/techmatrix_consulting?utm_medium=copy_link"
+                                                        style="color:#000000;text-decoration:none;width:100%;display:inline-block;">
+                                                        <img src="https://gallery.mailchimp.com/842000e165a3340698ad52ad6/images/d227ccb2-a029-4903-afae-66030ce68457.png"
+                                                            alt="Instagram" style="max-width: 30px;">
+                                                    </a>
+                                                </td>
+                                               
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <table cellpadding="0" cellspacing="0" border="0"
+                                        style="border-top:1px dashed #b7b7b7;">
+                                        <tbody>
+                                            <tr>
+                                                <td align="center"
+                                                    style="padding:20px 4px 10px;font-family:arial, sans-serif;font-size:13px;vertical-align:top;line-height:16px;color:#383834;">
+                                                   <b> Address : Club 125, B Wing, 3rd Floor, Sec-125, Noida - 201303, India.</b>
+<small style="display: block;">2023 Techmatrix Pvt Ltd. Salesforce and Force.com are trademarks of salesforce.com, inc. and are used here with permission. All other trademarks are property of their respective owners.</small>
+                                                </td>
+                                            </tr>
+                                           
+                                            <tr>
+                                                <td align="center" style="padding-top:5px;">
+                                                    <a href="https://www.techmatrixconsulting.com/"
+                                                        style="font-family:arial, sans-serif;display:inline-block;text-decoration:none;padding-right:10px;padding-left:10px;margin-right:5px;text-align:center;margin-top:10px;color:#000;"
+                                                        target="_blank">
+                                                        <img alt="TechMatrix"
+                                                            src="https://techmatrixconsulting.com/images/techmatrix-logo.png"
+                                                            style="outline:0px;border:0px; max-width:150px;">
+
+                                                    </a>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td
+                                                    style=" text-align:center; padding:5px 15px 10px;margin:0px;font-family:arial, sans-serif;font-size:10px;vertical-align:top;line-height:13px;margin-bottom:5px;color:#949494;">
+                                                    You are receiving this email because you agreed to receive email
+                                                    communications from TechMatrix as a registered user of TechMatrix. Please
+                                                    <a href="#"
+                                                        style="font-family:arial, sans-serif;text-decoration:underline;color:#bfbfbf;">click
+                                                        here</a>
+                                                    to unsubscribe.
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <!--Section Footer End-->
+                </td>
+            </tr>
+        </table>
+        <!--[if (gte mso 9)|(IE)]>
+</td>
+</tr>
+</table>
+<![endif]-->
+    </center>
+</body>
+
+</html>
